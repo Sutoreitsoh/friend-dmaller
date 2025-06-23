@@ -1,0 +1,121 @@
+QSS {
+    background-color: #FFCCCC; /* Light red background */
+    color: #660000; /* Dark red text */
+}
+
+QPushButton {
+    background-color: #FF6666; /* Red button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FF4C4C; /* Darker red on hover */
+}
+
+QLineEdit {
+    border: 1px solid #FF9999; /* Light red border */
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+QLabel {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+QVBoxLayout {
+    spacing: 10px; /* Space between elements */
+}
+
+QScrollArea {
+    border: 1px solid #FF9999; /* Light red border for scroll area */
+}
+
+QScrollBar:vertical {
+    border: 1px solid #FF9999; /* Light red border for vertical scrollbar */
+    background: #FFCCCC; /* Light red background */
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #FF6666; /* Red scrollbar handle */
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #FF4C4C; /* Darker red on hover */
+}
+
+QMenuBar {
+    background-color: #FFCCCC; /* Light red menu bar */
+}
+
+QMenu {
+    background-color: #FF6666; /* Red menu */
+    border: 1px solid #FF9999; /* Light red border */
+}
+
+QMenu::item {
+    padding: 5px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #FF4C4C; /* Darker red on selection */
+}
+
+QWidget, QMainWindow {
+    background-color: #181818;
+    color: #ff4c4c;
+}
+
+QPushButton {
+    background-color: #ff2222;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #ff4c4c;
+}
+
+QLabel {
+    color: #ff4c4c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+QTextEdit, QLineEdit, QSpinBox {
+    background: #222;
+    color: #ff4c4c;
+    border: 1px solid #ff4c4c;
+    border-radius: 5px;
+}
+
+QListWidget {
+    background: #222;
+    color: #ff4c4c;
+    border: none;
+    font-size: 16px;
+}
+
+QScrollBar:vertical {
+    border: 1px solid #ff4c4c;
+    background: #181818;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ff2222;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #ff4c4c;
+}
