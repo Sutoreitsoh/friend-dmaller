@@ -57,6 +57,23 @@ class Z(QMW):
             if not os.path.exists(fpath):
                 with open(fpath, "w", encoding="utf-8") as f:
                     f.write(default)
+
+    def _load_delay_from_env(self):
+        env_path = os.path.join(os.getcwd(), ".env")
+        if not os.path.exists(env_path):
+            with open(env_path, "w", encoding="utf-8") as f:
+                f.write("Delay=2\n")
+            return 2.0
+        
+        try:
+            with open(env_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.startswith("Delay="):
+                        return float(line.strip().split("=")[1])
+        except (ValueError, IndexError):
+            pass
+        return 2.0
+
     def _b(self):
         _lg = lg.getLogger("X")
         _lg.setLevel(lg.DEBUG)
@@ -81,7 +98,7 @@ class Z(QMW):
         x = t[0]
         self._log.append(f"Récupération des amis avec le token {x[:10]}...")
 
-        d = float(_o.getenv("Delay", "2"))
+        d = self._s.c2()
 
         h = {
             "Authorization": x,
